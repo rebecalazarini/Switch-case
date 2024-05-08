@@ -1,0 +1,44 @@
+//calcular com as 4 operações
+#include <stdio.h>
+int main() {
+    int a,b;
+    int soma;
+    int sub;
+    int mult;
+    int divisão;
+    int escolha;
+    
+    printf("escolha um numero de 1 a 4, sendo:\n 1-soma\n 2-sub\n 3-mult\n 4-divisão\n ");
+    scanf("%d", &escolha);
+    
+    printf("Digite o primeiro valor inteiro: ");
+    scanf("%d", &a);
+    
+    printf("Digite o segundo valor inteiro: ");
+    scanf("%d", &b);
+    
+    
+    switch(escolha) 
+    {
+        case 1:
+        printf("%d + %d = %d\n",a,b, a + b );
+        scanf("%d, %d", &a, &b);
+        break;
+        
+        case 2:
+        printf("%d - %d = %d\n",a,b, a - b);
+        scanf("%d, %d", &a, &b);
+        break;
+        
+        case 3:
+        printf("%d * %d = %d\n",a,b, a * b );
+        scanf("%d, %d", &a, &b);
+        break;
+        
+        case 4:
+        printf("%d / %d = %d\n",a,b, a / b );
+        scanf("%d, %d", &a, &b);
+        break;
+    }
+    return 0;
+}
