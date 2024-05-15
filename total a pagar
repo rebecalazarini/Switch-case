@@ -1,0 +1,36 @@
+//algoritmo que leia o código do item adquirido pelo consumidor e a quantidade, calculando e mostrando o valor a pagar. Não será necessário exibir o produto e o valor, somente o valor final.  
+#include <stdio.h>
+int main() {
+int numero;
+float preco;
+float qtd;
+
+printf("Digite um numero de 100 a 105: ");
+scanf("%d", &numero);
+printf("Digte a quantidade: ");
+scanf("%f", &qtd);
+
+
+  switch(numero) 
+  {
+    case 100:
+    printf("O valor é:R$ %.2f reais\n",preco = 1.70 * qtd );
+    break;
+    case 101:
+    printf("O valor é:R$ %.2f reais\n",preco = 2.30 * qtd);
+    break;
+    case 102:
+    printf("O valor é:R$ %.2f reais\n", preco = 2.60 * qtd);
+    break;
+    case 103:
+    printf("O valor é:R$ %.2f reais\n",preco = 2.40 * qtd);
+    break;
+    case 104:
+    printf("O valor é:R$ %.2f reais\n",preco = 2.50 * qtd);
+    break;
+    case 105:
+    printf("O valor é:R$ %.2f reais\n",preco = 1.00 * qtd);
+    break;
+}
+return 0;
+}
